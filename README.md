@@ -1,6 +1,11 @@
 Albot.Online User Guide
 =======================
 
+# Table of contents
+1. [AI Bots](#AI bots)
+2. [Communicate with the server](#Communicate with the server)
+3. [Client](#Client)
+
 Main concept explained
 ----------------------
 Albot.Online works in a API kind of way, where it sends game information to your Bot and handles the actions that you respond with and then sends it further to a game server. We do this local communication using TCP or UDP messages depending on what game you are currently playing. 
@@ -92,13 +97,14 @@ Self explanatory. Contains the exact message “GameOver”, and indicates that 
 
 ### Send protocol
 These messages must be sent by the Bot:
-Name
-Type
-Description
-Player move
-string
-One (1) number between 0-6 indicating the next move. Sent after a Move request message has been received. Note: Formatted as a string.
-Message: Player move
+
+```
+ Name        | Type   | Description
+ ----------------------------------
+ Player move | string | One (1) number between 0-6 indicating the next move. Sent after a Move request message has been received.
+```
+
+#### Message: Player move
 This is the message that you send containing information about what move you wish to make. You simply send a text message referring to what column you chose to drop your next piece in. The columns are zero indexed, meaning you are expected to send a message from 0-6.
 Depicted in this picture to the right.
 
