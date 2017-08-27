@@ -9,7 +9,7 @@ All game types also comes with a training mode that is very useful in the beginn
 
 AI Bots
 ----------------------
-### What is a Bot?
+# What is a Bot?
 A Bot is a program running locally on your computer that will be used to send game commands. You will need to create a distinct Bot for each game you play. The typical pseudo-code for the main loop of a Bot looks like:
 
 ```
@@ -37,7 +37,7 @@ Client
 ----------------------
 The Client works as an intermediary, and keeps a connection open to the game server as well as your local Bot. There are executables available for Windows, macOS, and Linux (untested).
 
-### Connect to your client
+# Connect to your client
 Your Bot will run as a standalone application (run from your IDE or terminal window) alongside the Client. The steps to connect it are as follows: 
 1. Start the Client application 
 2. Navigate to the “Local Port” area in the game lobby. Located in the bottom right corner. Depicted in Figure 2.
@@ -47,7 +47,7 @@ If everything ran correctly, you should see a “Connected” sign in the Client
 
 Figure 2: Local Port area being marked in yellow.
 
-### Creating a new game
+# Creating a new game
 1. Navigate to the lobby.
 2. Click the “Create game” button, this will take open the “Create Room” section.
 3. Pick what type of game you want to create by selecting it in the “Game” section. See figure 3
@@ -57,7 +57,7 @@ Figure 2: Local Port area being marked in yellow.
 
 Figure 3: Create room section.
 
-### Join an already created game:
+# Join an already created game:
 1. Navigate to the lobby
 2. Select an already existing game in the game list.
 3. Click the “Join” button.
@@ -65,7 +65,7 @@ Figure 3: Create room section.
 
 Games
 -------------------------------
-### Connect 4
+# Connect 4
 Game play can be seen at https://en.wikipedia.org/wiki/Connect_Four.
 ## Receive protocol
 These messages must be handled by the Bot:
@@ -79,7 +79,7 @@ Game over
 string
 Duh.
 
-# Message: Move request
+### Message: Move request
 This message will be sent to your local Bot containing the current board position. The board position is represented by a 6 by 7 matrix where every cell has one of the following states:
 - 1  = Your playing piece
 - 0  = Empty square
@@ -93,7 +93,7 @@ Figure 4: Each number indicates the index position in the list of values that ar
 Figure 5: Example board. If you were playing as the yellow pieces and you received a move request containing the above position, the message would look like:
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 1 -1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
-# Message: Game over
+### Message: Game over
 Self explanatory. Contains the exact message “GameOver”, and indicates that the game is over.
 
 ## Send protocol
