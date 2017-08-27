@@ -1,10 +1,10 @@
 Albot.Online User Guide
 =======================
-
-# Table of contents
-j. [AI Bots](#ai-bots)
+1. [AI Bots](#ai-bots)
 2. [Communicate with the server](#communicate-with-the-server)
 3. [Client](#client)
+4. [Games](#games)
+4.1 [Connect 4](#connect-4)
 
 Main concept explained
 ----------------------
