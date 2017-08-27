@@ -65,15 +65,13 @@ Figure 3: Create room section.
 Game play can be seen at https://en.wikipedia.org/wiki/Connect_Four.
 ### Receive protocol
 These messages must be handled by the Bot:
-Name
-Type
-Description
-Move request
-string
-42 integers separated by space ( ) defining the current board position. After “Board position” has been received, the Bot has to send a “Next move” command.
-Game over
-string
-Duh.
+
+```
+ Name         | Type   | Description 
+ -----------------------------------
+ Move request | string | 42 integers separated by space ( ) defining the current board position. After “Board position” has been received, the Bot has to send a “Next move” command.
+ Game over    | string | "GameOver"
+```
 
 #### Message: Move request
 This message will be sent to your local Bot containing the current board position. The board position is represented by a 6 by 7 matrix where every cell has one of the following states:
