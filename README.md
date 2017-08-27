@@ -65,9 +65,9 @@ Figure 3: Create room section.
 
 Games
 -------------------------------
-# Connect 4
+### Connect 4
 Game play can be seen at https://en.wikipedia.org/wiki/Connect_Four.
-## Receive protocol
+#### Receive protocol
 These messages must be handled by the Bot:
 Name
 Type
