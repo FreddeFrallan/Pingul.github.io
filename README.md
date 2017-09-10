@@ -47,8 +47,6 @@ Your Bot will run as a standalone application (run from your IDE or terminal win
 4. Run your Bot from your IDE or terminal window, and make sure it connects to the same port as used in step 3. Make sure your Bot conforms to the communication protocol defined for the chosen game.
 If everything ran correctly, you should see a “Connected” sign in the Client application
 
-Figure 2: Local Port area being marked in yellow.
-
 ### Creating a new game
 1. Navigate to the lobby.
 2. Click the “Create game” button, this will take open the “Create Room” section.
@@ -56,8 +54,6 @@ Figure 2: Local Port area being marked in yellow.
 4. Give your game room a name.
 5. Click the “Create” button.
 6. Once enough players have joined, the game starts automatically.
-
-Figure 3: Create room section.
 
 ### Join an already created game:
 1. Navigate to the lobby
@@ -87,9 +83,12 @@ Note: This means that whether you are currently playing as Red or Yellow, your p
 
 The board matrix will be sent to you in a plain text message containing 42 numbers all separated by one space. These numbers will be written column by column as you can see in figure 4. See figure 5 for an example message.
 
-Figure 4: Each number indicates the index position in the list of values that are sent.
+![Connect 4 indices](fig/C4_indices.jpg)
+Each number indicates the index position in the list of values that are sent.
 
-Figure 5: Example board. If you were playing as the yellow pieces and you received a move request containing the above position, the message would look like:
+Here is an example board. 
+![Connect 4 example](fig/C4_ex.jpg)
+If you were playing as the yellow pieces and you received a move request containing the above position, the message would look like:
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 1 -1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 #### Message: Game over
@@ -106,8 +105,8 @@ These messages must be sent by the Bot:
 
 #### Message: Player move
 This is the message that you send containing information about what move you wish to make. You simply send a text message referring to what column you chose to drop your next piece in. The columns are zero indexed, meaning you are expected to send a message from 0-6.
-Depicted in this picture to the right.
+
+![Connect 4 columns](fig/C4_columns.jpg)
 
 If Albot.Online for whatever reason does not accept your move it will resend the move request until you give a proper response.
-
 
