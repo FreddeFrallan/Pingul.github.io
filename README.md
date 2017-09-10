@@ -62,8 +62,8 @@ This is of course not perfect: We have no check for when the game ends, nor any 
 
 Congratulations, you just made your first bot :) Now it's time to refine your bot! The message which we discarded before contains information where all markers are placed. See if you can use it to your advantage. 
 
-# Games
-## Connect 4
+# [Games](Games)
+## [Connect 4](Games/Connect4)
 Game play can be seen at [Wikipedia](https://en.wikipedia.org/wiki/Connect_Four).
 ### Messages to receive
 These messages must be handled by the Bot:
@@ -109,7 +109,7 @@ This is the message that you send containing information about what move you wis
 
 If Albot.Online for whatever reason does not accept your move it will resend the move request until you give a proper response.
 
-## Battleships
+## [Battleships](Games/Battleships)
 Game play can be seen at [Wikipedia](https://en.wikipedia.org/wiki/Battleship\_(game)).
 
 The game consists of two 10x10 boards, yours and your opponents. Both of these will be represented by a string where very square is described by a specific character. The characters will be written in the following order:
