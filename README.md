@@ -6,6 +6,8 @@ Albot.Online User Guide
 4. [Games](#games)
     1. [Connect 4](#connect-4)
 
+[Test page](Games)
+
 # Tutorial
 Albot.Online lets you build your own AI bot to play and develop new algorithms. 
 
