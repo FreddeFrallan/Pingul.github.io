@@ -6,6 +6,11 @@ Albot.Online User Guide
 4. [Games](#games)
     1. [Connect 4](#connect-4)
 
+# Tutorial
+Albot.Online lets you build your own AI bot to play and develop new algorithms. 
+
+<img src="fig/connection_graph.png" alt="Connection graph" />
+
 Main concept explained
 ----------------------
 Albot.Online works in a API kind of way, where it sends game information to your Bot and handles the actions that you respond with and then sends it further to a game server. We do this local communication using TCP or UDP messages depending on what game you are currently playing. 
@@ -63,7 +68,7 @@ If everything ran correctly, you should see a “Connected” sign in the Client
 
 # Games
 ## Connect 4
-Game play can be seen at https://en.wikipedia.org/wiki/Connect_Four.
+Game play can be seen at [Wikipedia](https://en.wikipedia.org/wiki/Connect_Four).
 ### Messages to receive
 These messages must be handled by the Bot:
 
@@ -109,7 +114,7 @@ This is the message that you send containing information about what move you wis
 If Albot.Online for whatever reason does not accept your move it will resend the move request until you give a proper response.
 
 ## Battleships
-Game play can be seen at https://en.wikipedia.org/wiki/Battleship\_(game).
+Game play can be seen at [Wikipedia](https://en.wikipedia.org/wiki/Battleship\_(game)).
 
 The game consists of two 10x10 boards, yours and your opponents. Both of these will be represented by a string where very square is described by a specific character. The characters will be written in the following order:
 
