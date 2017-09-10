@@ -9,7 +9,7 @@ Albot.Online User Guide
 # Tutorial
 Albot.Online lets you build your own AI bot to play and develop new algorithms. 
 
-<img src="fig/connection_graph.png" alt="Connection graph" style="max-width: 500px;" />
+<img src="fig/connection_graph.png" alt="Connection graph" />
 
 Your job is to build your own Local bot, connect it to your Client and then play a game towards the Game server. To get started you will need 3 things:
 
