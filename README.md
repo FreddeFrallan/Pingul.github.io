@@ -64,7 +64,7 @@ If everything ran correctly, you should see a “Connected” sign in the Client
 # Games
 ## Connect 4
 Game play can be seen at https://en.wikipedia.org/wiki/Connect_Four.
-### Receive protocol
+### Messages to receive
 These messages must be handled by the Bot:
 
 ```
@@ -83,7 +83,6 @@ Note: This means that whether you are currently playing as Red or Yellow, your p
 
 The board matrix will be sent to you in a plain text message containing 42 numbers all separated by one space. These numbers will be written column by column as you can see in figure 4. See figure 5 for an example message.
 
-<!--![Connect 4 indices](fig/C4_indices.jpg)-->
 <img src="fig/C4_indices.jpg" alt="Connect 4 indices" style="max-width: 200px;"/>
 
 Each number indicates the index position in the list of values that are sent.
@@ -91,15 +90,14 @@ Each number indicates the index position in the list of values that are sent.
 Here is an example board. 
 
 <img src="fig/C4_ex.jpg" alt="Connect 4 example" style="max-width: 200px;"/>
-<!--![Connect 4 example](fig/C4_ex.jpg)-->
 
 If you were playing as the yellow pieces and you received a move request containing the above position, the message would look like:
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 1 -1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+`0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 1 -1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0`
 
 #### Message: Game over
-Self explanatory. Contains the exact message “GameOver”, and indicates that the game is over.
+Self explanatory. Contains the exact message `“GameOver”`, and indicates that the game is over.
 
-### Send protocol
+### Messages to send
 These messages must be sent by the Bot:
 
 ```
@@ -112,7 +110,6 @@ These messages must be sent by the Bot:
 This is the message that you send containing information about what move you wish to make. You simply send a text message referring to what column you chose to drop your next piece in. The columns are zero indexed, meaning you are expected to send a message from 0-6.
 
 <img src="fig/C4_columns.jpg" alt="Connect 4 columns" style="width: 200px;"/>
-<!--![Connect 4 columns](fig/C4_columns.jpg)-->
 
 If Albot.Online for whatever reason does not accept your move it will resend the move request until you give a proper response.
 
