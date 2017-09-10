@@ -1,12 +1,9 @@
 Albot.Online User Guide
 =======================
-1. [AI Bots](#ai-bots)
-2. [Communicate with the server](#communicate-with-the-server)
-3. [Client](#client)
-4. [Games](#games)
-    1. [Connect 4](#connect-4)
-
-[Test page](Games)
+1. [Get started tutorial](#ai-bots)
+2. [Games](Games)
+    1. [Connect 4](Games/Connect4)
+    2. [Battleships](Games/Battleships)
 
 # Tutorial
 Albot.Online lets you build your own AI bot to play and develop new algorithms. 
