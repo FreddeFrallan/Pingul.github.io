@@ -14,7 +14,7 @@ The following picture shows all the different components of Albot.Online.
 
 Your job is to build your own Local bot, connect it to your Client and then play a game towards the Game server. To get started you will need 3 things:
 
-1. A Client **download link should be here**
+1. A Client ([download from our dropbox](https://www.dropbox.com/sh/3xsqabdu4sqpuau/AACKOw_9JTvI_1si_PGt6gida?dl=0))
 2. Your favorite text editor
 3. A way to compile/run your code
 
